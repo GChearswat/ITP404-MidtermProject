@@ -1,0 +1,30 @@
+#map { 
+	height: 600px; 
+	width:900px; 
+	margin:0 auto;
+	float: left;
+	position: static;
+}
+
+#container {
+	height: 1000px;
+	width: 1300px;
+}
+
+#sidebar {
+	height: 600px;
+	width: 400px;
+	float:right;
+	font-size: 12px;
+	text-align: left;
+	position: static;
+}
+
+#concertinfo {
+	height: 500px;
+	width: 1300px;
+}
+
+body {
+	font-family: helvetica;
+}

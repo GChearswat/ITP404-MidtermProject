@@ -1,0 +1,39 @@
+<?php require 'twitter.php' ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Midterm Project Woot!</title>
+	<h1>Mumford & Sons Tour</h1>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+	<div id="map"></div>
+	<div id="sidebar">
+		<!-- tweets will be loaded here -->
+	</div>
+	<div id="concertinfo">
+	</div>
+</div>
+
+
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="handlebars-1.0.rc.1.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<script type="text/template" id="eventful-template">
+	<li>
+	<a href="{{url}}" target = "_blank">
+	Mumford & Sons: {{ start_time }} 
+	</a>
+	<p>
+	Venue:{{ venue_name }}
+	</p>
+	</li>
+</script>
+<script src="main.js"></script>
+
+</body>
+</html>
